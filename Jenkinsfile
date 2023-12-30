@@ -31,8 +31,7 @@ pipeline {
   }
 }
 
-
-   stage('Check code coverage') {
+stage('Check code coverage') {
             steps {
                 script {
                     def token = "squ_32789bcdadb6e4337e432d6cbc100c2a1a14fde5"
