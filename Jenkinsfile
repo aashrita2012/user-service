@@ -32,7 +32,6 @@ pipeline {
   }
 }
 
-
 stage('Check code coverage') {
             steps {
                 script {
@@ -61,7 +60,7 @@ stage('Check code coverage') {
         } 
 
 
- stage('Docker Build and Push') {
+stage('Docker Build and Push') {
       steps {
           sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
           sh 'docker build -t veerendra1976/user-service:${VERSION} .'
