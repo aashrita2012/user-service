@@ -70,7 +70,7 @@ stage('Check code coverage') {
     } 
 
 
-     stage('Cleanup Workspace') {
+stage('Cleanup Workspace') {
       steps {
         deleteDir()
        
