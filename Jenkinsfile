@@ -93,7 +93,6 @@ stage('Update Image Tag in GitOps') {
     }
 
   }
-
 }
 
 
