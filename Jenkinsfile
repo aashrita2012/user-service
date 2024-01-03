@@ -29,7 +29,6 @@ pipeline {
     sh 'mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.host.url=http://${JENKINS_SERVER}:9000/ -Dsonar.login=squ_39a9694cd607275d372753857acf98695db232a1'
   }
 }
-
 stage('Check code coverage') {
             steps {
                 script {
